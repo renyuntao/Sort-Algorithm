@@ -35,7 +35,11 @@ def topologicalsort(graph):
 			return
 	print(*L)
 
-vertex_num,edge_num = [int(i) for i in input().split()]
+print('Input the number of vertex:',end=' ')
+vertex_num = int(input())
+print('Input the number of edges:',end=' ')
+edge_num = int(input())
+print('Input the edge:')
 graph = [[0 for j in range(vertex_num)] for i in range(vertex_num)]
 for i in range(edge_num):
 	src,des = [int(j)-1 for j in input().split()]
