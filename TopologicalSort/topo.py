@@ -32,6 +32,7 @@ def topologicalsort(graph):
 	for row,col in itertools.product(range(length),range(length)):
 		if graph[row][col] == 1:
 			print('Error:have cycle')
+			return
 	print(*L)
 
 vertex_num,edge_num = [int(i) for i in input().split()]
