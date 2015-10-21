@@ -1,4 +1,5 @@
 #!/usr/bin/env python
+import itertools
 
 def topologicalsort(graph):
 	S,L = [],[]
@@ -28,6 +29,9 @@ def topologicalsort(graph):
 					break
 			if not have_incoming_edge:
 				S.append(t_node)
+	for row,col in itertools.product(range(length),range(length)):
+		if graph[row][col] == 1:
+			print('Error:have cycle')
 	print(*L)
 
 vertex_num,edge_num = [int(i) for i in input().split()]
