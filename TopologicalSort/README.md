@@ -1,7 +1,7 @@
 # Synopsis
 Implement [Topological Sorting](https://en.wikipedia.org/wiki/Topological_sorting) in Python.
 # Example
-![http://i13.tietuku.com/e03d6a73a248d36a.png]     
+![topological sorting](http://i13.tietuku.com/e03d6a73a248d36a.png)    
 Run this program as    
 ```
 $ python topo.py
