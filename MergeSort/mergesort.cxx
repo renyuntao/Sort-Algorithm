@@ -70,7 +70,7 @@ void mergesort(int arr[],int length)
 		k *= 2;
 	}
 
-	delete tmp;
+	delete [] tmp;
 }
 
 int main(void)
